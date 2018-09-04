@@ -14,7 +14,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 			   
 			driver.manage().window().maximize();
 			driver.get("https://www.amazon.in");
-						
+			
 			//MouseHover functions
 		   Actions action=new Actions(driver);
 		   action.moveToElement(driver.findElement(By.xpath("//a[@id='nav-link-yourAccount']"))).build().perform();
@@ -27,3 +27,5 @@ System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		   driver.findElement(By.xpath(".//*[@id='signInSubmit']")).click();
 }
 }
+			
+			
